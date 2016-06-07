@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+<!-- Link Boostrap, CSS and JavaScript Start -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/scripts.js"></script>
+<!-- Link Boostrap, CSS and JavaScript End -->
     <title>Word Puzzle</title>
   </head>
   <body>
-    <h1>Word Puzzle!</h1>
-    <form id="puzzle">
-      <div class="">
-
-      </div>
-    </form>
+    <div class="container">
+      <h1>Word Puzzle!</h1>
+<!-- Form Start -->
+      <form id="puzzle">
+        <div class="form-group">
+          <label for="quote">Enter in your favorite quote!</label>
+          <input required id="quote" type="text" class="form-control">
+        </div>
+        <button type="submit" class="btn">Scramble!</button>
+      </form>
+<!-- Form End -->
+    </div>
   </body>
 </html>

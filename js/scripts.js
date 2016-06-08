@@ -3,9 +3,11 @@ $(document).ready(function() {
     // debugger;
     var quoteInput = $("input#quote").val();
     var characters = quoteInput.split("");
-    console.log(characters);
+    // console.log(characters);
     var result = [];
-    characters.forEach(function(character){
+
+    function vowelRemoval(character)
+    {
       if (character === "a") {
         character = "-";
         result.push(character);
@@ -25,9 +27,55 @@ $(document).ready(function() {
       } else {
         result.push(character);
       }
-    });
-    // result.join("");
-    alert(result);
+    }
+
+characters.forEach(vowelRemoval);
+
+alert(result);
+result = [];
+
+characters.forEach(
+      function(character)
+      {
+        if (character === "a")
+        {
+          character = "-";
+          result.push(character);
+        }
+        else if (character === "e")
+        {
+          character = "-";
+          result.push(character);
+        }
+        else if (character === "i")
+        {
+          character = "-";
+          result.push(character);
+        }
+        else if (character === "o")
+        {
+          character = "-";
+          result.push(character);
+        }
+        else if (character === "u")
+        {
+          character = "-";
+          result.push(character);
+        }
+        else if (character === "y")
+        {
+          character = "-";
+          result.push(character);
+        }
+        else
+        {
+          result.push(character);
+        }
+      }
+    );
+
+    var message = result.join("");
+    alert(message);
 
 
   event.preventDefault();
